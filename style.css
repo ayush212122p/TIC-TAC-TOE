@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body {
+   background:  linear-gradient(to bottom, #d3d3d3, #f5f5f5);;
+   text-align: center;
+}
+
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+   
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0 ,0.3);
+    font-size: 8vmin;
+    /* color: maroon; */
+    background-color:#ffffc7;
+}
+#reset{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191911;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+#newBtn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191911;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #358d92;
+    font-size:8vmin;
+}
+.msg-container{
+    height:100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:4rem;
+}
+.hide{
+    display: none;
+}
+.pink{
+   color: #962f77;
+}
+.blue{
+    color: #347d70;
+}
+#scoreboard{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+   gap: 5px;
+   margin: 5px;
+}
+.board1{
+    border: 2px solid black;
+    background-color: #669999;
+    height: 50px;
+    min-width: 80px;
+}
+.board2{
+    border: 2px solid black;
+      background-color: #669999;
+    height: 50px;
+    min-width: 80px;
+}
+.player1{
+    font-size: 22px;
+    color: white;
+   font-weight: bolder;
+}
+.player2{
+    font-size: 22px;
+    color: white;
+    font-weight: bolder;
+}
+.wonpoints1{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.wonpoints2{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.turn{
+    color: red;
+  position: relative;
+  top: 15px;
+}
+@media (max-width:500px){
+    .msg-container {
+        height: 166vmin;
+    }
+    .turn {
+        top: 80px;
+    }
+    .heading{
+        position: relative;
+    top: 52px;
+    }
+    #scoreboard{
+      justify-content: space-evenly;
+    }
+    #msg{
+        font-size: 11vmin;
+    }
+    .game{
+        height: 70vmin;
+    width: 70vmin;
+    gap: 3.5vmin;
+}
+    }
