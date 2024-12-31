@@ -129,6 +129,5 @@ let playmusic3=()=>{
 
 
 
-
 newGamebtn.addEventListener("click",resestGame)
 resetBtn.addEventListener("click",resestGame)
