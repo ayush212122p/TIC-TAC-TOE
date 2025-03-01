@@ -12,10 +12,6 @@ let Player1=document.querySelector(".player1");
 let Player2=document.querySelector(".player2");
 let turn =document.querySelector(".turn");
 let audio4 = new Audio("soundeffects/bgsong.mp3");
-audio4.loop=true;
-audio4.play();
-audio4.autoplay=true;
-audio4.volume=.40;
 
 Player1.innerText=X;
 Player2.innerText=O;
@@ -31,7 +27,11 @@ const winPatterns=[
   ];
   let count = 0;
 const resestGame=()=>{
-  audio4.play();
+  if(audio4.play===true){
+    audio4.play();
+  }else{
+    audio4.pause();
+  }
   turn.innerText="";
   count=0;
   turn0=true;
